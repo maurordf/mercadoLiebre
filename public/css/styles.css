@@ -1,0 +1,121 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(logReg.css);
+
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --azul_medio:#0022AA;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: var(--grisClaro);
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+main{
+    width: 90%;
+    color: var(--grisOscuro);
+    margin-right: auto;
+    margin-left: auto;
+}
+.secton_last_visit{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.article{
+    margin: 10px;
+    background-color: #fff;
+    width: 25%;
+    border-radius: 10px;
+
+}
+.article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.article:hover .descriptions{
+    visibility: visible;
+}
+.article_info{
+    border-top: thin solid var(--grisClaro);
+    padding: 15px;
+}
+.prod_img{
+    margin-left: 5%;
+    width: 90%;
+}
+
+/* UI KIT */
+
+.headlines{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.price{
+    font-size: 18px;
+    font-weight: 400;
+}
+.discount{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--verde);
+}
+.descriptions{
+    visibility: hidden;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.fa-bars{
+    color: #fff;
+}
+.fa_blue{
+    color: var(--celeste);
+    margin-bottom: 10px;
+    width: 2em;
+}
+@media (max-width: 768px){ 
+    .article{
+        width: 40%;
+    }
+    .secton_last_visit{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 375px){ 
+    .secton_last_visit{
+        align-items: center;
+        align-content: center;
+    flex-direction: column;    
+}
+    .article{
+        width: 90%;
+        box-shadow: none;
+    }
+    .descriptions{
+        display: none;
+    }
+}

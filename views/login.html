@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+    <header>
+       <a href="/"> <img class="logo" src="/img/logo-mercado-liebre.svg" alt=""></a>
+    </header>
+    <main class="form_log_reg">
+        <section class="section_log_reg" >
+            <form class="form_log_reg" action="/login" method="POST">
+               <div style="display: flex; flex-direction: column;">
+                <label class="label_log_reg" for="user">USUARIO</label>
+                <input class="input_log_reg" type="text" id="user" name="user" required>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <label class="label_log_reg" for="pass">CONTRASEÑA</label>
+                    <input style="margin-bottom: 0%;"  class="input_log_reg" type="password" id="pass" name="pass" minlength="5"  maxlength="10" required>
+                    <a href="#" style="margin-left: 0%;" class="link">Olvidaste tu contraseña</a>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <button class="btn no_disapear" type="submit">INGRESAR</button>
+                    <a href="#" class="link">¿No tenés usuario? Registrate</a>
+                </div>
+        </form>
+        </section>
+    </main>
+   
+</body>
+</html>

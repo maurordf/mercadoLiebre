@@ -105,14 +105,14 @@ main{
         flex-wrap: wrap;
     }
 }
-@media (max-width: 375px){ 
+@media (max-width: 426px){ 
     .secton_last_visit{
         align-items: center;
         align-content: center;
     flex-direction: column;    
 }
     .article{
-        width: 90%;
+        width: 90%!important;
         box-shadow: none;
     }
     .descriptions{

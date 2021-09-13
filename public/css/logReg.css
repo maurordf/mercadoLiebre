@@ -112,4 +112,7 @@ header a .logo{
     .form_log_reg{    
         width: 90%;
     }
+    .reg{
+        padding-top: 5%!important;
+    }
 }

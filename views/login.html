@@ -19,19 +19,23 @@
     <header>
        <a href="/"> <img class="logo" src="/img/logo-mercado-liebre.svg" alt=""></a>
     </header>
-    <main class="form_log_reg">
+    <main class="form_log_reg log">
         <section class="section_log_reg" >
             <form class="form_log_reg" action="/login" method="POST">
-               <div style="display: flex; flex-direction: column;">
+               <div  class="form_logReg_inputLabel">
                 <label class="label_log_reg" for="user">USUARIO</label>
                 <input class="input_log_reg" type="text" id="user" name="user" required>
-                </div>
-                <div style="display: flex; flex-direction: column;">
+                <!-- <span class="feedback">Usuario inexistente</span>     -->
+            </div>
+                <div  class="form_logReg_inputLabel">
                     <label class="label_log_reg" for="pass">CONTRASEÑA</label>
-                    <input style="margin-bottom: 0%;"  class="input_log_reg" type="password" id="pass" name="pass" minlength="5"  maxlength="10" required>
-                    <a href="#" style="margin-left: 0%;" class="link">Olvidaste tu contraseña</a>
+                    <input class="input_log_reg" type="password" id="pass" name="pass" minlength="5"  maxlength="10" required>
+                    <!-- <span class="feedback">contraseña incorrecta</span>     -->
+                    <a href="#" class="link">Olvidaste tu contraseña</a>
+                    
+
                 </div>
-                <div style="display: flex; flex-direction: column;">
+                <div class="form_logReg_inputLabel">
                     <button class="btn no_disapear" type="submit">INGRESAR</button>
                     <a href="#" class="link">¿No tenés usuario? Registrate</a>
                 </div>

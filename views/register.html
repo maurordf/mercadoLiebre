@@ -22,79 +22,93 @@
     <main class="form_log_reg reg">
         <section class="section_log_reg " >
             <form class="form_log_reg reg" action="/login" method="POST">
-                <div style="display: flex; flex-direction: column;">
+                <div class="form_logReg_inputLabel">
                     <label class="label_log_reg" for="fullName">Nombre y apellido</label>
                     <input class="input_log_reg" type="text" id="fullName" name="fullName" required>
                  </div>
-                <div style="display: flex; flex-direction: column;">
+                <div class="form_logReg_inputLabel">
                     <label class="label_log_reg" for="user">Nombre de usuario</label>
                     <input class="input_log_reg" type="text" id="user" name="user" required>
+                    <!-- <span class="feedback">nombre de usuario no disponible</span>     -->
+
                 </div>
-                <div style="display: flex; flex-direction: column;">
+                <div class="form_logReg_inputLabel">
                     <label class="label_log_reg" for="birthDate">Fecha de nacimiento</label>
                     <input class="input_log_reg" type="date" id="birthDate" name="ubirthDateser" required>
                 </div>
-                <div style="display: flex; flex-direction: column;">
+                <div class="form_logReg_inputLabel">
                     <label class="label_log_reg" for="adress">Domicilio</label>
                     <input class="input_log_reg" type="text" id="adress" name="adress" required>
                 </div>
-                <div style="display: flex; flex-direction:column; ">
-                    <span style="font-size: 16px; margin-bottom: 5px;">Tipo de Perfil</span>
-                    <div style="display: flex; justify-content: space-evenly;">
-                        <div style="display: flex; flex-direction: column; align-items: center;" >
-                            <input class="input_log_reg" type="radio" id="profile_type" name="profile_type" required>
-                            <label class="label_log_reg" for="profile_type">Vendedor</label>
+                <div class="profile_type">
+                    <span class="span_reg">Tipo de Perfil</span>
+                    <div class="profile_radios">
+                        <div>
+                            <input class="radio_log_reg" type="radio" id="profile_type" name="profile_type" required>
+                            <label class="label_log_reg_2" for="profile_type">Vendedor</label>
                         </div>
-                        <div style="display: flex; flex-direction: column; align-items: center;" >
-                            <input class="input_log_reg" type="radio" id="profile_type" name="profile_type" required>
-                            <label class="label_log_reg" for="profile_type">Comprador</label>
+                        <div>
+                            <input class="radio_log_reg" type="radio" id="profile_type" name="profile_type" required>
+                            <label class="label_log_reg_2" for="profile_type">Comprador</label>
                         </div>
                     </div>
                 </div>
-                <div style="display: flex; flex-direction:column; ">
-                    <span>Intereses</span>
-                    <div style="display: flex; justify-content: space-evenly;">
-                        <div style="display: flex; flex-direction: column; align-items: center;" >
-                            <input class="input_log_reg" type="checkbox" id="profile_interest" name="profile_interest" value="1" required>
-                            <label class="label_log_reg" for="profile_interest">Electro</label>
+                <div class="interests">
+                    <span class="span_reg">Intereses</span>
+                    <div class="interests_checks">
+                        <div class="interest_a">
+                            <input class="check_log_reg" type="checkbox" id="profile_interest" name="profile_interest" value="1" required>
+                            <label class="label_log_reg_2" for="profile_interest">Electro</label>
                         </div>
-                        <div style="display: flex; flex-direction: column; align-items: center;" >
-                            <input class="input_log_reg" type="checkbox" id="profile_interest" name="profile_interest" value="2"  required>
-                            <label class="label_log_reg" for="profile_interest">Moda</label>
+                        <div class="interest_b">
+                            <input class="check_log_reg" type="checkbox" id="profile_interest" name="profile_interest" value="2"  required>
+                            <label class="label_log_reg_2" for="profile_interest">Moda</label>
                         </div>
-                        <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10px;" >
-                            <input class="input_log_reg" type="checkbox" id="profile_interest" name="profile_interest" value="3"  required>
-                            <label class="label_log_reg" for="profile_interest">Hogar</label>
+                        <div class="interest_c">
+                            <input class="check_log_reg" type="checkbox" id="profile_interest" name="profile_interest" value="3"  required>
+                            <label class="label_log_reg_2" for="profile_interest">Hogar</label>
                         </div>
                     </div>
-                    <div style="display: flex; justify-content: space-evenly;">
-                        <div style="display: flex; flex-direction: column; align-items: center;" >
-                            <input class="input_log_reg" type="checkbox" id="profile_interest" name="profile_interest" value="4"  required>
-                            <label class="label_log_reg" for="profile_interest">Jugueteria</label>
+                    <div class="interests_checks">
+                        <div >
+                            <input class="check_log_reg" type="checkbox" id="profile_interest" name="profile_interest" value="4"  required>
+                            <label class="label_log_reg_2" for="profile_interest">Jugueteria</label>
                         </div>
-                        <div style="display: flex; flex-direction: column; align-items: center;" >
-                            <input class="input_log_reg" type="checkbox" id="profile_interest" name="profile_interest"  value="5" required>
-                            <label class="label_log_reg" for="profile_interest">Vida Sana</label>
+                        <div  >
+                            <input class="check_log_reg" type="checkbox" id="profile_interest" name="profile_interest"  value="5" required>
+                            <label class="label_log_reg_2" for="profile_interest">Vida Sana</label>
                         </div>
-                        <div style="display: flex; flex-direction: column; align-items: center;" >
-                            <input class="input_log_reg" type="checkbox" id="profile_interest" name="profile_interest"  value="6" required>
-                            <label class="label_log_reg" for="profile_interest">Vehiculos</label>
+                        <div>
+                            <input class="check_log_reg" type="checkbox" id="profile_interest" name="profile_interest"  value="6" required>
+                            <label class="label_log_reg_2" for="profile_interest">Vehiculos</label>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <label class="label_log_reg" for="img_profile">Foto de perfil</label>
-                    <input type="file" name="img_profile" id="img_profile" accept=".jpg,.png">
+                    <label class="label_log_reg profile_pic" for="img_profile">Foto de perfil</label>
+                    <input class="input_log_reg" type="file" name="img_profile" id="img_profile" accept=".jpg,.png">
+                    <!-- <span class="feedback">formato de archivo no admitido</span>     -->
+
                 </div>
-                <div style="display: flex; flex-direction: column;">
+                <div class="form_logReg_inputLabel">
                     <label class="label_log_reg" for="pass">Contraseña</label>
-                    <input  style="margin-bottom: 0%;"  class="input_log_reg" type="password" id="pass" name="pass" minlength="5"  maxlength="10" required>
+                    <input class="input_log_reg" type="password" id="pass" name="pass" minlength="5"  maxlength="10" required>
                 </div>
-                <div style="display: flex; flex-direction: column;">
+                <div class="form_logReg_inputLabel">
                     <label class="label_log_reg" for="passConfirm">Repetir Contraseña</label>
-                    <input style="margin-bottom: 0%;"  class="input_log_reg" type="password" id="passConfirm" name="passConfirm" minlength="5"  maxlength="10" required>
+                    <input class="input_log_reg" type="password" id="passConfirm" name="passConfirm" minlength="5"  maxlength="10" required>
+                    <!-- <span class="feedback">las contraseñas no coinciden</span>     -->
+
                 </div>
-                <div style="display: flex; flex-direction: column;">
+                <div  class="terms_check" >
+                    <input class="check_log_reg" type="checkbox" id="profile_interest" name="profile_interest" value="4"  required>
+                    <label for="profile_interest">
+                        <a href="" class="link">
+                            He leído y acepto los términos y condiciones
+                        </a>
+                    </label>
+                </div>
+                <div class="form_logReg_inputLabel">
                     <button class="btn no_disapear" type="submit">INGRESAR</button>
                     <a href="#" class="link">¿No tenés usuario? Registrate</a>
                 </div>

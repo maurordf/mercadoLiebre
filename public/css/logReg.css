@@ -10,15 +10,13 @@ header a .logo{
     width: 40%;
 }
 .section_log_reg{
-    background-color: #fff;
-    margin-top: 5%;
+    margin-top: 2%;
     width: 30%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
 }
 .form_log_reg {    
-    height: 50vh;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -26,9 +24,63 @@ header a .logo{
     margin-right: auto;
     margin-left: auto;
 }
-.reg{
-    height: 80vh;
+.log{
+    padding-top: 8%;
 }
+.reg{
+    padding-top: 5%
+}
+.form_logReg_inputLabel{
+    display: flex; 
+    flex-direction: column;
+}
+.label_log_reg{
+    font-size:  16px;
+    font-weight: 300;
+}
+.label_log_reg_2{
+    font-size:  12px;
+    font-weight: 300;
+}
+.input_log_reg{
+    border-style: none;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.span_reg{
+    font-size: 16px; 
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+.profile_radios{
+    display: flex; 
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.profile_type{
+    display: flex; 
+    flex-direction:column; 
+}
+.interests {
+    display: flex; 
+    flex-direction:column; 
+    margin-bottom: 10px;
+}
+.interests_checks{
+    display: flex; 
+    justify-content: space-evenly; 
+    margin-bottom: 5px;
+}
+.interest_a{
+    position: relative; right: 15px;
+}
+.interest_b{
+    position: relative; right: 11px;
+}
+.interest_c{
+    position: relative; right: 2px;
+}
+
 .btn{
     background-color: var(--celeste);
     color: #fff;
@@ -37,9 +89,21 @@ header a .logo{
     border-style: none;
     margin-bottom: 3%;
 }
+.terms_check{
+    margin-bottom: 10px;
+}
+
+.link{
+    color: var(--celeste)!important;
+    margin-bottom: 25px;
+    text-align: center;
+}
 .btn:hover{
     background-color: var(--azul_medio);
     font-weight: 600;
+}
+.feedback{
+    color: rgb(237, 0, 0);
 }
 @media (max-width: 768px){ 
     .section_log_reg{

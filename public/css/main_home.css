@@ -1,0 +1,78 @@
+
+main{
+    width: 90%;
+    color: var(--grisOscuro);
+    margin-right: auto;
+    margin-left: auto;
+}
+.secton_last_visit{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.article{
+    margin: 10px;
+    background-color: #fff;
+    width: 25%;
+    border-radius: 10px;
+
+}
+.article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.article:hover .descriptions{
+    visibility: visible;
+}
+.article:hover .container_truck i{
+    transform: rotate(-90deg);
+    transition-duration: .5s;
+}
+.article_info{
+    border-top: thin solid var(--grisClaro);
+    padding: 15px;
+    position: relative;
+}
+.prod_img{
+    margin-left: 5%;
+    width: 90%;
+}
+.container_truck{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: solid thin var(--verde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--verde);
+    position: absolute;
+    right: 10px;
+    top:-40px;
+}
+
+@media (max-width: 768px){ 
+    .article{
+        width: 40%;
+    }
+    .secton_last_visit{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 426px){ 
+    .secton_last_visit{
+        align-items: center;
+        align-content: center;
+    flex-direction: column;    
+}
+    .article{
+        width: 90%!important;
+        box-shadow: none;
+    }
+    .descriptions{
+        display: none;
+    }
+}
